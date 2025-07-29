@@ -10,6 +10,7 @@ type Category struct {
 var Rest = Category{value: "Rest"}
 var Fizz = Category{value: "Fizz"}
 var Buzz = Category{value: "Buzz"}
+var FizzBuzz = Category{value: "FizzBuzz"}
 
 func Categorizer(number int) Category {
 	if number%3 == 0 {

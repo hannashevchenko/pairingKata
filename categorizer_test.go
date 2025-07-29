@@ -16,6 +16,7 @@ func TestCategorizer(t *testing.T) {
 		{input: 9, want: Fizz},
 		{input: 5, want: Buzz},
 		{input: 10, want: Buzz},
+		{input: 15, want: FizzBuzz},
 	}
 	for _, tc := range tests {
 		name := fmt.Sprintf("%d", tc.input)
