@@ -24,7 +24,3 @@ func Categorizer(number int) Category {
 	}
 	return Rest
 }
-
-func main() {
-	Categorizer(10)
-}
