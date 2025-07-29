@@ -1,17 +1,20 @@
 package categorizer
 
 import (
+	"fmt"
 	"testing"
 )
 
 func TestCategorizer(t *testing.T) {
-	tests := map[string]struct {
+	tests := []struct {
 		input int
 		want  Category
 	}{
-		"input: 1": {input: 1, want: Rest},
+		{input: 1, want: Rest},
+		{input: 3, want: Fizz},
 	}
-	for name, tc := range tests {
+	for _, tc := range tests {
+		name := fmt.Sprintf("%d", tc.input)
 		t.Run(name, func(t *testing.T) {
 			got := Categorizer(tc.input)
 			if got != tc.want {

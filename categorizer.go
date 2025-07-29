@@ -8,9 +8,10 @@ type Category struct {
 }
 
 var Rest = Category{value: "Rest"}
+var Fizz = Category{value: "Fizz"}
 
 func Categorizer(number int) Category {
-	panic("TODO")
+	return Rest
 }
 
 func main() {
