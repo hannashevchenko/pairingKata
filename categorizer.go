@@ -11,6 +11,9 @@ var Rest = Category{value: "Rest"}
 var Fizz = Category{value: "Fizz"}
 
 func Categorizer(number int) Category {
+	if number%3 == 0 {
+		return Fizz
+	}
 	return Rest
 }
 
