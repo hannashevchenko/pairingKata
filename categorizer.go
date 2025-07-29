@@ -13,10 +13,10 @@ var Buzz = Category{value: "Buzz"}
 var FizzBuzz = Category{value: "FizzBuzz"}
 
 func Categorizer(number int) Category {
-	if number%3 == 0 && number%5 == 0 {
-		return FizzBuzz
-	}
 	if number%3 == 0 {
+		if number%5 == 0 {
+			return FizzBuzz
+		}
 		return Fizz
 	}
 	if number%5 == 0 {
