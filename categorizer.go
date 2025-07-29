@@ -7,6 +7,8 @@ type Category struct {
 	value string
 }
 
+var Rest = Category{value: "Rest"}
+
 func Categorizer(number int) Category {
 	panic("TODO")
 }
