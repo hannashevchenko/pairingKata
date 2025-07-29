@@ -9,10 +9,14 @@ type Category struct {
 
 var Rest = Category{value: "Rest"}
 var Fizz = Category{value: "Fizz"}
+var Buzz = Category{value: "Buzz"}
 
 func Categorizer(number int) Category {
 	if number%3 == 0 {
 		return Fizz
+	}
+	if number%5 == 0 {
+		return Buzz
 	}
 	return Rest
 }
